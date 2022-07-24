@@ -51,7 +51,6 @@ class RemoteFeedLoaderTests: XCTestCase {
             client.complete(withStatusCode: code, at: index)
             XCTAssertEqual(capturedErrors, [.invalidData])
         }
-        
     }
     
     // MARK: - Helpers
@@ -67,7 +66,7 @@ class RemoteFeedLoaderTests: XCTestCase {
     private class HTTPClientSpy: HTTPClient {
         private var messages = [(
             url: URL,
-            completion: (Error?, HTTPURLResponse?) -> Void
+            completion: (HTTPClientResult) -> Void
         )]()
         
         var requestedURLs: [URL] {
@@ -76,7 +75,7 @@ class RemoteFeedLoaderTests: XCTestCase {
         
         func get(
             from url: URL,
-            completion: @escaping (Error?, HTTPURLResponse?) -> Void
+            completion: @escaping (HTTPClientResult) -> Void
         ) {
             messages.append((url, completion))
         }
@@ -85,7 +84,7 @@ class RemoteFeedLoaderTests: XCTestCase {
             with error: Error,
             at index: Int = 0
         ) {
-            messages[index].completion(error, nil)
+            messages[index].completion(.failure(error))
         }
         
         func complete(
@@ -97,10 +96,9 @@ class RemoteFeedLoaderTests: XCTestCase {
                 statusCode: code,
                 httpVersion: nil,
                 headerFields: nil
-            )
+            )!
             
-            messages[index].completion(nil, response)
-            
+            messages[index].completion(.success(response))            
         }
     }
     
