@@ -12,6 +12,7 @@
 		842865DC288D51F200473AE2 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842865DB288D51F200473AE2 /* FeedItem.swift */; };
 		846D27A8288D5359007932AC /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D27A7288D5359007932AC /* FeedLoader.swift */; };
 		846D27B0288D614A007932AC /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D27AF288D614A007932AC /* RemoteFeedLoader.swift */; };
+		84BF5FC8288ED43800F791CA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5FC7288ED43800F791CA /* HTTPClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		842865DB288D51F200473AE2 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		846D27A7288D5359007932AC /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		846D27AF288D614A007932AC /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
+		84BF5FC7288ED43800F791CA /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +77,9 @@
 		842865BF288D517300473AE2 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				846D27AE288D6105007932AC /* Feed Api */,
 				842865C1288D517300473AE2 /* Info.plist */,
 				846D27AB288D544D007932AC /* Feed Features */,
+				846D27AE288D6105007932AC /* Feed Api */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				846D27AF288D614A007932AC /* RemoteFeedLoader.swift */,
+				84BF5FC7288ED43800F791CA /* HTTPClient.swift */,
 			);
 			path = "Feed Api";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				846D27A8288D5359007932AC /* FeedLoader.swift in Sources */,
 				846D27B0288D614A007932AC /* RemoteFeedLoader.swift in Sources */,
+				84BF5FC8288ED43800F791CA /* HTTPClient.swift in Sources */,
 				842865DC288D51F200473AE2 /* FeedItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
