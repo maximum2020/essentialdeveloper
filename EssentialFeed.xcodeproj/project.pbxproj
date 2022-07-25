@@ -13,6 +13,7 @@
 		846D27A8288D5359007932AC /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D27A7288D5359007932AC /* FeedLoader.swift */; };
 		846D27B0288D614A007932AC /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846D27AF288D614A007932AC /* RemoteFeedLoader.swift */; };
 		84BF5FC8288ED43800F791CA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5FC7288ED43800F791CA /* HTTPClient.swift */; };
+		84BF5FCE288ED4B600F791CA /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF5FCD288ED4B600F791CA /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		846D27A7288D5359007932AC /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		846D27AF288D614A007932AC /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		84BF5FC7288ED43800F791CA /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		84BF5FCD288ED4B600F791CA /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				846D27AF288D614A007932AC /* RemoteFeedLoader.swift */,
+				84BF5FCD288ED4B600F791CA /* FeedItemsMapper.swift */,
 				84BF5FC7288ED43800F791CA /* HTTPClient.swift */,
 			);
 			path = "Feed Api";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BF5FCE288ED4B600F791CA /* FeedItemsMapper.swift in Sources */,
 				846D27A8288D5359007932AC /* FeedLoader.swift in Sources */,
 				846D27B0288D614A007932AC /* RemoteFeedLoader.swift in Sources */,
 				84BF5FC8288ED43800F791CA /* HTTPClient.swift in Sources */,
