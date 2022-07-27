@@ -6,8 +6,7 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
     func test_endToEndTestServerGETFeedResult_matchesFixedTestAccountData() {
         switch getFeedResult() {
             case let .success(items)?:
-                XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")
-                
+                XCTAssertEqual(items.count, 8, "Expected 8 items in the test account feed")                
                 XCTAssertEqual(items[0], expectedItem(at: 0))
                 XCTAssertEqual(items[1], expectedItem(at: 1))
                 XCTAssertEqual(items[2], expectedItem(at: 2))
@@ -16,11 +15,6 @@ class EssentialFeedAPIEndToEndTests: XCTestCase {
                 XCTAssertEqual(items[5], expectedItem(at: 5))
                 XCTAssertEqual(items[6], expectedItem(at: 6))
                 XCTAssertEqual(items[7], expectedItem(at: 7))
-                
-                items.enumerated().forEach { (index, item) in
-                    
-                }
-                
             case let .failure(error)?:
                 XCTFail("Expected successful feed result, got \(error) instead")
                 
